@@ -1,13 +1,13 @@
 // IMPORTANT: Increment CACHE_NAME any time you change urlsToCache or sw.js logic
-const CACHE_NAME = 'my-todo-pwa-cache-v2'; // Changed cache version
+const CACHE_NAME = 'my-todo-pwa-cache-v4'; // <--- CACHE VERSION INCREMENTED
 const urlsToCache = [
-    '/',
-    '/index.html',
-    '/style.css',
-    '/app.js',
-    '/manifest.json',
-    '/images/icon-192x192.png',
-    '/images/icon-512x512.png'
+    '/my-todo-pwa/', // <--- IMPORTANT: This caches the root of your PWA
+    '/my-todo-pwa/index.html',
+    '/my-todo-pwa/style.css',
+    '/my-todo-pwa/app.js',
+    '/my-todo-pwa/manifest.json',
+    '/my-todo-pwa/images/icon-192x192.png',
+    '/my-todo-pwa/images/icon-512x512.png'
 ];
 
 // --- Install Event ---
