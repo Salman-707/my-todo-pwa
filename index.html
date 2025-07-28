@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <!-- Favicon for various devices -->
+    <link rel="icon" href="images/icon-192x192.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="images/icon-192x192.png">
+    <meta name="theme-color" content="#4CAF50"> <!-- Green theme color for a To-Do app -->
+</head>
+<body>
+    <header>
+        <h1>My Offline To-Do List</h1>
+    </header>
+    <main>
+        <div class="task-input-container">
+            <input type="text" id="new-task-input" placeholder="Add a new task...">
+            <button id="add-task-btn">Add Task</button>
+        </div>
+        <ul id="task-list">
+            <!-- Tasks will be loaded here by JavaScript -->
+        </ul>
+        <div id="status">Online</div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Offline To-Do PWA</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
